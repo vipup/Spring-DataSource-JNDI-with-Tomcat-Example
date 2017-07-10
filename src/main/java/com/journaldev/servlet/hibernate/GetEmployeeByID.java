@@ -15,8 +15,7 @@ import org.hibernate.Transaction;
 import org.jboss.logging.Logger;
 
 import com.journaldev.spring.jdbc.model.Employee;
-
-//import com.journaldev.servlet.hibernate.model.Employee;
+ 
 
 @WebServlet("/GetEmployeeByID/*")
 public class GetEmployeeByID extends HttpServlet {
