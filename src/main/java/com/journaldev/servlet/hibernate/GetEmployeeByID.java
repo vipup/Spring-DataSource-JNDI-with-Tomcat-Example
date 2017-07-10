@@ -25,7 +25,7 @@ public class GetEmployeeByID extends HttpServlet {
 	public final Logger logger = Logger.getLogger(GetEmployeeByID.class);
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int empId = Integer.parseInt(request.getParameter("empId"));request.getParameterMap().put("empId", new String[]{ "1"})
+		int empId = Integer.parseInt(request.getParameter("empId"));
 		logger.info("Request Param empId="+empId);
 		
 		SessionFactory sessionFactory = (SessionFactory) request.getServletContext().getAttribute("SessionFactory");
